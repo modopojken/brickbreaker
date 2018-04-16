@@ -26,6 +26,7 @@ public class Main extends Application {
         obj.setResizable(false);
         obj.setVisible(true);
         obj.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
 
 
     }
