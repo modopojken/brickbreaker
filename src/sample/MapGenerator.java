@@ -11,10 +11,8 @@ public class MapGenerator {
         for(int i = 0; i < map.length; i++){
             for(int j=0; j<map[0].length;j++){
              map[i][j] = 1;
-
             }
         }
-
         brickWidth = 540/col;
         brickHeight = 150/row;
     }
