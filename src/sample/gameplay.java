@@ -31,7 +31,7 @@ public class gameplay extends JPanel implements KeyListener, ActionListener {
     private int ballheight = 20;
     private int paddlewidth = 100;
     private int studskoff = paddlewidth/2;
-    
+
 
     private MapGenerator map;
 
@@ -161,6 +161,7 @@ public class gameplay extends JPanel implements KeyListener, ActionListener {
     @Override
     public void keyReleased(KeyEvent e) {}
     @Override
+    //Vad som händer då man trycker höger och vänstertangenterna (Man flyttar höger och vänster med paddeln)
     public void keyPressed(KeyEvent e) {
         if(e.getKeyCode() == KeyEvent.VK_RIGHT) {
             if(playerX >= 600){
@@ -216,6 +217,7 @@ public class gameplay extends JPanel implements KeyListener, ActionListener {
             }
         }
     }
+    //Flytta höger och vänster
     public void moveRight() {
         play=true;
         playerX+=20;
