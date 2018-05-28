@@ -15,15 +15,11 @@ public class gameplay extends JPanel implements KeyListener, ActionListener {
     private boolean play = false;
     private int score = 0;
     private int streak = 0;
-
     private int totalBricks = 21;
-
     private Timer timer;
     private int delay = 8;
-
     private int playerX = 310;
-
-    private int ballposX = 120;
+    private int ballposX = 150;
     private int ballposY = 350;
     private int ballXdir = -1;
     private int ballYdir = -2;
@@ -31,11 +27,7 @@ public class gameplay extends JPanel implements KeyListener, ActionListener {
     private int ballheight = 20;
     private int paddlewidth = 100;
     private int studskoff = paddlewidth/2;
-
-
     private MapGenerator map;
-
-
 
     public gameplay() {
         map = new MapGenerator(3,7);
@@ -192,7 +184,7 @@ public class gameplay extends JPanel implements KeyListener, ActionListener {
                 int slumpnum;
 
                 maximum = 400;
-                minimum = 250;
+                minimum = 300;
                 maxatnum = 550;
                 minstanum = 50;
                 String mittnr;
@@ -214,6 +206,7 @@ public class gameplay extends JPanel implements KeyListener, ActionListener {
                 streak++;
 
                 repaint();
+
             }
         }
     }
